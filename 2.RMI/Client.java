@@ -7,6 +7,8 @@ public class Client {
             Scanner s = new Scanner(System.in);
             System.out.println("Enter the Server address : ");
             String server = s.nextLine();
+            //created an object of Interface class
+            //Naming.lookup->client will look up on rmiregistry for object
             ServerInterface si = (ServerInterface) Naming.lookup("rmi://" + server + "/Server");
             System.out.println("Enter first string : ");
             String first = s.nextLine();
