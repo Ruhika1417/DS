@@ -1,3 +1,4 @@
+//implementor class -> used to invoke a remote object
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.rmi.*;
